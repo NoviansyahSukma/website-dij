@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Config with local font */
+/* @font-face {
+  font-family: Doto;
+  src: url("../src/assets/fonts/Doto-Regular.ttf");
+} */
+
+@import "tailwindcss";
+
+@theme {
+  --font-doto: Doto, "sans-serif";
+  --font-playwrite-au: Playwrite AU TAS, "sans-serif";
+  --font-monserrat: Montserrat, "sans-serif";
+  --font-roboto: Roboto, "sans-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
