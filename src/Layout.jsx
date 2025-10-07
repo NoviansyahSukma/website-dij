@@ -6,11 +6,11 @@ export default function Layout() {
     <>
       <div className="w-full h-screen fixed bg-[url(src/assets/bg.jpg)] bg-cover bg-center bg-no-repeat"></div>
       <div className="w-full m-auto lg:w-4/5 xl:w-5/6 lg:py-7 relative z-50">
-        <div className="top-0 right-0 left-0 fixed">
+        <div className="top-0 right-0 left-0 fixed mt-2">
           <Navbar />
         </div>
 
-        <div className="w-full px-2 mt-16 mb-14 md:mt-24">
+        <div className="w-full px-2 mt-18 mb-14 md:mt-24">
           <Outlet />
         </div>
 

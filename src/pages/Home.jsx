@@ -10,7 +10,7 @@ export default function Home() {
         <img
           src={Jumbotron}
           alt="jumbotron-dij"
-          className="h-76 md:h-140 object-cover -mt-18"
+          className="h-76 md:h-140 object-cover -mt-12"
         />
       </div>
 
