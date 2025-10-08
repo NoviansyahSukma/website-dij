@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import "./main.css";
 import Home from "./pages/Home";
 import Layout from "./Layout";
-import About from "./pages/About";
+import Product from "./pages/Product";
+import Client from "./pages/Client";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -12,7 +13,8 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="about" element={<About />} /> */}
+          <Route path="product" element={<Product />} />
+          <Route path="client" element={<Client />} />
         </Route>
       </Routes>
     </HashRouter>
