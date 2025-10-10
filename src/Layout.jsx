@@ -12,7 +12,7 @@ export default function Layout() {
     setShow(false);
     const timeout = setTimeout(() => {
       setShow(true);
-    }, 100);
+    }, 200);
 
     return () => clearTimeout(timeout);
   }, [location.pathname]);

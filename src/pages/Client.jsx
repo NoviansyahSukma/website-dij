@@ -10,7 +10,7 @@ export default function Client() {
     <>
       <div className="w-full xl:w-4/5 2xl:w-5/6 mx-auto grid grid-cols-1 gap-10 xl:grid-cols-3 mt-16 md:mt-24 lg:mt-28 xl:mt-1 pb-5 px-4 xl:pb-12 2xl:pb-1">
         <div
-          className={`w-full transition-all transform duration-1500 ease-in-out ${
+          className={`w-full transition-all transform duration-1000 ease-in-out ${
             show
               ? "opacity-100 translate-y-0 delay-1000"
               : "opacity-0 -translate-y-100"
@@ -36,7 +36,7 @@ export default function Client() {
         </div>
 
         <div
-          className={`w-full transition-all transform duration-1500 ease-in-out ${
+          className={`w-full transition-all transform duration-1000 ease-in-out ${
             show
               ? "opacity-100 translate-y-0 delay-500"
               : "opacity-0 -translate-y-100"
@@ -62,8 +62,8 @@ export default function Client() {
         </div>
 
         <div
-          className={`w-full transition-all transform duration-1500 ease-in-out ${
-            show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-250"
+          className={`w-full transition-all transform duration-1000 ease-in-out ${
+            show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-100"
           }`}
         >
           <div className="font-roboto text-center xl:mt-7 2xl:mt-14 xl:px-8 text-purple-900">
