@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ShowContext } from "./contexts/ShowContext";
-import Navigation from "./components/Navigation";
+import Navbar from "./components/Navbar";
 
 export default function Layout() {
   const [show, setShow] = useState(false);
@@ -12,7 +12,7 @@ export default function Layout() {
     setShow(false);
     const timeout = setTimeout(() => {
       setShow(true);
-    }, 200);
+    }, 100);
 
     return () => clearTimeout(timeout);
   }, [location.pathname]);
@@ -25,16 +25,16 @@ export default function Layout() {
 
           <div className="relative w-full m-auto xl:w-[90%] 2xl:w-[85%] xl:mt-3 2xl:mt-2">
             <div className="top-0 right-0 left-0 fixed z-[9999] m-auto xl:relative">
-              <Navigation />
+              <Navbar />
             </div>
 
-            <div className="relative z-30 w-full mt-14 xl:mt-0 xl:pt-22 2xl:pt-24">
+            <div className="relative z-30 w-full mt-16 md:mt-22 lg:mt-29 xl:mt-0 xl:pt-22 2xl:pt-24">
               <Outlet />
             </div>
           </div>
 
           <div
-            className={`relative w-full flex items-center justify-center md:mt-7 xl:mt-5 2xl:mt-2 pt-6 pb-4 transition-all transform duration-1500 ease-in-out ${
+            className={`relative w-full flex items-center justify-center md:mt-7 xl:mt-4 2xl:mt-2 pt-6 pb-4 lg:pb-8 xl:pb-0 transition-all transform duration-1500 ease-in-out ${
               show ? "opacity-100 delay-700" : "opacity-0"
             }`}
           >

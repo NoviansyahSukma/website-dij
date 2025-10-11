@@ -10,16 +10,16 @@ export default function Home() {
 
   return (
     <>
-      <div className="xl:grid xl:grid-cols-2 xl:gap-4 px-2 xl:px-0 mt-12 md:mt-18 lg:mt-22 xl:mt-0">
+      <div className="xl:grid xl:grid-cols-2 xl:gap-4 px-2 xl:px-0 mt-12 md:mt-18 lg:mt-22 xl:mt-2">
         <div
-          className={`order-2 h-50 md:h-80 lg:h-96 xl:h-68 2xl:h-93 overflow-hidden shadow-md transition-all transform duration-1000 ease-in-out ${
+          className={`order-2 h-64 md:h-80 lg:h-120 xl:h-74 2xl:h-90 overflow-hidden md:px-2 transition-all transform duration-1000 ease-in-out ${
             show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-50"
           }`}
         >
           <img
             src={Jumbotron}
             alt="jumbotron-dij"
-            className="h-86 md:h-140 lg:h-180 xl:h-140 2xl:h-192 object-cover m-auto -mt-12 md:-mt-18 lg:-mt-28 xl:-mt-24 2xl:-mt-34"
+            className="h-95 md:h-140 lg:h-216 xl:h-130 2xl:h-160 object-cover m-auto shadow-md -mt-12 md:-mt-20 lg:-mt-32 xl:-mt-18 2xl:-mt-24"
           />
         </div>
 
@@ -28,11 +28,11 @@ export default function Home() {
             show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-50"
           }`}
         >
-          <h1 className="text-xl tracking-wide md:text-2xl lg:text-3xl xl:text-2xl font-bold">
+          <h1 className="text-xl tracking-wide md:text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-bold">
             FASTEST CONNECTION
           </h1>
-          <hr className="max-w-64 lg:max-w-80 xl:max-w-64 m-auto my-2 md:mt-3 lg:mt-4 xl:ml-0 xl:mt-1 bg-purple-900" />
-          <p className="font-monserrat tracking-wide text-sm md:text-lg lg:text-lg xl:text-md text-slate-900 mt-2 md:mt-4 lg:mt-5 xl:mt-3 px-2 lg:px-7 xl:pl-0">
+          <hr className="max-w-64 lg:max-w-80 xl:max-w-64 2xl:max-w-78 m-auto my-2 md:mt-3 lg:mt-4 xl:ml-0 xl:mt-1 2xl:mt-2 bg-purple-900" />
+          <p className="font-monserrat font-medium tracking-wide text-sm md:text-lg lg:text-lg xl:text-md text-slate-800 mt-2 md:mt-4 lg:mt-5 xl:mt-3 px-2 lg:px-7 xl:pl-0">
             Pada awal sejarah industri komunikasi Indonesia, Detik Ini Juga(DIJ)
             telah menjadi salah satu Penyedia layanan internet yang muncul
             dengan kuat dari fokusnya dalam bisnis, komitmen dalam layanan dan

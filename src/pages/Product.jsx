@@ -7,10 +7,10 @@ export default function Product() {
   const show = useContext(ShowContext);
   return (
     <>
-      <div className="w-full mt-16 md:mt-24 lg:mt-28 xl:mt-1 grid grid-cols-1 gap-y-10 md:gap-y-14 lg:gap-y-18 xl:gap-y-8 pb-5 2xl:pb-1">
+      <div className="w-full mt-16 md:mt-26 lg:mt-34 xl:mt-2 grid grid-cols-1 gap-y-10 md:gap-y-14 lg:gap-y-18 xl:gap-y-8 pb-5 xl:pb-0 2xl:px-16">
         <div className="w-full m-auto px-3 md:px-5 grid grid-cols-1 xl:grid-cols-2 gap-y-3 md:gap-y-4 lg:gap-y-5 xl:gap-y-0">
           <div
-            className={`font-roboto text-center xl:text-left xl:mt-7 2xl:mt-14 xl:px-8 text-purple-900 transition-all transform duration-1000 ease-in-out ${
+            className={`font-roboto text-center xl:text-left xl:mt-7 2xl:mt-14 xl:px-8 text-purple-900 xl:shadow-lg transition-all transform duration-1000 ease-in-out ${
               show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-100"
             }`}
           >
@@ -18,9 +18,9 @@ export default function Product() {
               BROADBAND
             </h1>
 
-            <hr className="w-40 lg:w-50 xl:w-32 m-auto xl:m-0 bg-purple-900 mt-1 lg:mt-2 xl:mt-2" />
+            <hr className="w-40 lg:w-50 xl:w-38 m-auto xl:m-0 bg-purple-800 mt-1 lg:mt-2 xl:mt-2" />
 
-            <p className="tracking-wide text-slate-900 font-monserrat text-sm md:text-lg lg:text-xl xl:text-md mt-3 px-4 md:px-6 lg:px-18 xl:px-0">
+            <p className="tracking-wide font-medium text-slate-900 font-monserrat text-sm md:text-lg lg:text-xl xl:text-md mt-2 px-4 md:px-6 lg:px-18 xl:px-0">
               Servis ini direkomendasikan untuk rumah, kamar kos, apartemen,
               usaha bisnis kecil, atau kantor kecil yang tidak memiliki
               kebutuhan khusus untuk kecepatan internet yang cepat dan stabil.
@@ -28,14 +28,14 @@ export default function Product() {
           </div>
 
           <div
-            className={`w-[95%] xl:w-[80%] 2xl:w-[100%] 2xl:h-80 m-auto bg-amber-100 overflow-hidden shadow-md transition-all transform duration-1000 ease-in-out ${
+            className={`w-full md:w-[90%] xl:w-[75%] 2xl:w-[70%] m-auto transition-all transform duration-1000 ease-in-out ${
               show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-100"
             }`}
           >
             <img
               src={Product_1}
               alt="product-1"
-              className="object-cover m-auto -mt-8 2xl:-mt-28"
+              className="object-cover m-auto shadow-md 2xl:shadow-xl"
             />
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Product() {
 
         <div className="w-full m-auto px-3 md:px-5 grid grid-cols-1 xl:grid-cols-2 gap-y-3 md:gap-y-4 lg:gap-y-5 xl:gap-y-0">
           <div
-            className={`xl:order-2 font-roboto text-center xl:text-right xl:mt-6 2xl:mt-14 xl:px-8 text-purple-900 transition-all transform duration-1000 ease-in-out ${
+            className={`xl:order-2 font-roboto text-center xl:text-right xl:mt-6 2xl:mt-14 xl:px-8 text-purple-900 xl:shadow-lg transition-all transform duration-1000 ease-in-out ${
               show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-100"
             }`}
           >
@@ -56,9 +56,9 @@ export default function Product() {
               DEDICATED
             </h1>
 
-            <hr className="w-40 lg:w-50 xl:w-32 m-auto xl:m-0 xl:float-right bg-purple-900 mt-1 lg:mt-2 xl:mt-2" />
+            <hr className="w-40 lg:w-50 xl:w-38 m-auto xl:m-0 xl:float-right bg-purple-900 mt-1 lg:mt-2 xl:mt-2" />
 
-            <p className="tracking-wide text-slate-900 font-monserrat text-sm md:text-lg lg:text-xl xl:text-md xl:clear-both mt-3 xl:mt-5 px-4 md:px-6 lg:px-18 xl:px-0">
+            <p className="tracking-wide font-medium text-slate-800 font-monserrat text-sm md:text-lg lg:text-xl xl:text-md xl:clear-both mt-2 xl:mt-5 px-4 md:px-6 lg:px-18 xl:px-0">
               Servis internet dedicated biasanya digunakan oleh kantor bisnis,
               co-working space, atau gedung perusahaan karena kecepatan internet
               didedikasikan khusus untuk setiap pengguna sehingga kecepatan yang
@@ -67,14 +67,14 @@ export default function Product() {
           </div>
 
           <div
-            className={`xl:order-1 w-[95%] xl:w-[80%] 2xl:w-[95%] 2xl:h-80 m-auto overflow-hidden shadow-md transition-all transform duration-1000 ease-in-out ${
+            className={`xl:order-1 w-full md:w-[90%] xl:w-[75%] 2xl:w-[70%] m-auto transition-all transform duration-1000 ease-in-out ${
               show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-100"
             }`}
           >
             <img
               src={Product_2}
               alt="product-1"
-              className="object-cover m-auto -mt-8 2xl:-mt-38"
+              className="object-cover m-auto shadow-md 2xl:shadow-xl"
             />
           </div>
         </div>
