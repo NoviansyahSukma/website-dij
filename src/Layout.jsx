@@ -35,7 +35,7 @@ export default function Layout() {
           </div>
 
           <div
-            className={`relative w-full flex items-center justify-center md:mt-7 xl:mt-4 2xl:mt-2 pt-6 pb-4 lg:pb-8 xl:pb-0 transition-opacity duration-700 ease-in-out ${
+            className={`relative w-full flex items-center justify-center md:mt-7 xl:mt-4 2xl:mt-2 pt-6 pb-4 lg:pb-8 xl:pb-0 transition-opacity duration-2000 ease-in-out ${
               show ? "opacity-100 delay-100" : "opacity-0 delay-0"
             }`}
           >

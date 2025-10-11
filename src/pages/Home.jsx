@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div className="xl:grid xl:grid-cols-2 xl:gap-4 px-2 xl:px-0 mt-12 md:mt-18 lg:mt-22 xl:mt-2">
         <div
-          className={`order-2 h-64 md:h-80 lg:h-120 xl:h-74 2xl:h-90 overflow-hidden md:px-2 transition-all duration-1000 ease-in-out ${
+          className={`order-2 h-64 md:h-80 lg:h-120 xl:h-74 2xl:h-90 overflow-hidden md:px-2 transition-[opacity, transform] duration-2000 ease-in-out ${
             show ? "opacity-100 translate-x-0" : "opacity-0 translate-x-100"
           }`}
         >
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <div
-          className={`order-1 font-roboto text-center xl:text-left text-purple-900 mt-3 md:mt-7 xl:mt-3 2xl:mt-14 xl:px-5 2xl:px-14 transition-all duration-1000 ease-in-out ${
+          className={`order-1 font-roboto text-center xl:text-left text-purple-900 mt-3 md:mt-7 xl:mt-3 2xl:mt-14 xl:px-5 2xl:px-14 transition-[opacity, transform] duration-2000 ease-in-out ${
             show ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-50"
           }`}
         >
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       <div
-        className={`text-purple-900 text-center w-full xl:w-4/5 2xl:w-3/5 m-auto tracking-wide grid grid-cols-1 md:grid-cols-3 gap-y-3 mt-5 md:mt-7 lg:mt-10 xl:mt-7 md:px-3 2xl:pb-7 transition-all duration-1000 ease-in-out ${
+        className={`text-purple-900 text-center w-full xl:w-4/5 2xl:w-3/5 m-auto tracking-wide grid grid-cols-1 md:grid-cols-3 gap-y-3 mt-5 md:mt-7 lg:mt-10 xl:mt-7 md:px-3 2xl:pb-7 transition-[opacity, transform] duration-2000 ease-in-out ${
           show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-50"
         }`}
       >
