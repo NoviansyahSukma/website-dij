@@ -10,11 +10,9 @@ export default function Layout() {
 
   useEffect(() => {
     setShow(false);
-    const timeout = setTimeout(() => {
+    setTimeout(() => {
       setShow(true);
     }, 100);
-
-    return () => clearTimeout(timeout);
   }, [location.pathname]);
 
   return (
