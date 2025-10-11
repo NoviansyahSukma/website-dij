@@ -13,7 +13,7 @@ export default function Layout() {
 
     const timeout = setTimeout(() => {
       setShow(true);
-    }, 300);
+    }, 100);
 
     return () => clearTimeout(timeout);
   }, [location.pathname]);
@@ -36,7 +36,7 @@ export default function Layout() {
 
           <div
             className={`relative w-full flex items-center justify-center md:mt-7 xl:mt-4 2xl:mt-2 pt-6 pb-4 lg:pb-8 xl:pb-0 transition-opacity duration-700 ease-in-out ${
-              show ? "opacity-100 delay-300" : "opacity-0 delay-0"
+              show ? "opacity-100 delay-100" : "opacity-0 delay-0"
             }`}
           >
             <h1 className="font-roboto inline-block text-purple-900 text-sm 2xl: text-center shadow-md px-4 py-2">

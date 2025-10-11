@@ -12,7 +12,7 @@ export default function Client() {
         <div
           className={`w-full transition-all duration-1000 ease-in-out ${
             show
-              ? "opacity-100 translate-y-0 delay-300"
+              ? "opacity-100 translate-y-0 delay-100"
               : "opacity-0 -translate-y-100 delay-0"
           }`}
         >
@@ -38,7 +38,7 @@ export default function Client() {
         <div
           className={`w-full transition-all duration-1000 ease-in-out ${
             show
-              ? "opacity-100 translate-y-0 delay-150"
+              ? "opacity-100 translate-y-0 delay-50"
               : "opacity-0 -translate-y-100 delay-0"
           }`}
         >

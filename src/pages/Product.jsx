@@ -42,7 +42,7 @@ export default function Product() {
 
         <hr
           className={`w-24 md:w-80 xl:w-96 m-auto bg-slate-100 transition-opacity duration-1000 ease-in-out ${
-            show ? "opacity-100 delay-300" : "opacity-0 delay-0"
+            show ? "opacity-100 delay-100" : "opacity-0 delay-0"
           }`}
         />
 
