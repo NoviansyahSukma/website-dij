@@ -12,7 +12,7 @@ export default function Layout() {
     setShow(false);
     setTimeout(() => {
       setShow(true);
-    }, 100);
+    }, 500);
   }, [location.pathname]);
 
   return (

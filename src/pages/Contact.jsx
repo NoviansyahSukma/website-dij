@@ -30,7 +30,7 @@ export default function Contact() {
           <div className="text-slate-600 mt-5 grid grid-cols-1 gap-y-2 md:grid-cols-3">
             <div className="text-lg font-semibold w-48 mx-auto flex items-center justify-evenly cursor-pointer hover:text-slate-400">
               <BsInstagram />
-              <Link to="https://www.instagram.com/detikinijuga">
+              <Link to="https://www.instagram.com/detikinijuga" target="blank">
                 Connect With Us
               </Link>
             </div>
