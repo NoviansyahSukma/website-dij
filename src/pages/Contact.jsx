@@ -10,14 +10,14 @@ export default function Contact() {
   return (
     <>
       <div
-        className={`w-full md:w-5/6 xl:w-4/5 2xl:w-3/4 mx-auto md:mt-34 xl:mt-8 px-3 py-4 md:py-6 lg:py-8 transition-all transform duration-1000 ease-in-out ${
+        className={`w-full md:w-5/6 xl:w-4/5 2xl:w-3/4 mx-auto md:mt-34 xl:mt-8 px-3 py-4 md:py-6 lg:py-8 transition-all duration-1000 ease-in-out ${
           show
-            ? "opacity-100 md:border-1 md:border-gray-200 md:shadow-lg delay-200"
-            : "opacity-0"
+            ? "opacity-100 md:border-1 md:border-gray-200 md:shadow-lg delay-100"
+            : "opacity-0 delay-0"
         }`}
       >
         <div
-          className={`font-roboto text-center xl:px-8 text-purple-900 transition-all transform duration-1000 ease-in-out ${
+          className={`font-roboto text-center xl:px-8 text-purple-900 transition-all duration-1000 ease-in-out ${
             show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-100"
           }`}
         >
@@ -48,7 +48,7 @@ export default function Contact() {
         </div>
 
         <div
-          className={`w-full mx-auto md:w-4/5 h-78 2xl:h-100 mt-5 shadow-md transition-all transform duration-1000 ease-in-out ${
+          className={`w-full mx-auto md:w-4/5 h-78 2xl:h-100 mt-5 shadow-md transition-all duration-1000 ease-in-out ${
             show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-100"
           }`}
         >
