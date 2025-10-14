@@ -15,17 +15,16 @@ export default function Navbar() {
     {
       id: 4,
       label: "Subscribe",
-      link: "https://noviansyahsukma.github.io/page-subscribe/",
-      external: true,
+      link: "/subscribe",
       different: true,
     },
     { id: 5, label: "Contact", link: "contact" },
-    {
-      id: 6,
-      label: "Speed Test",
-      link: "https://speedtest.detik.net.id/",
-      external: true,
-    },
+    // {
+    //   id: 6,
+    //   label: "Speed Test",
+    //   link: "https://speedtest.detik.net.id/",
+    //   external: true,
+    // },
   ];
 
   return (
@@ -55,35 +54,32 @@ export default function Navbar() {
                 key={item.id}
                 className={`${
                   item.different
-                    ? "font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-blue-500 to-orange-500 bg-[length:200%_auto] animate-[shine_4s_linear_infinite]"
+                    ? "font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-blue-500 to-orange-500 hover:via-slate-300 hover:to-gray-400 bg-[length:200%_auto] animate-[shine_4s_linear_infinite]"
                     : "hover:text-slate-400 focus:text-slate-300"
                 }`}
               >
-                {item.external || item.link.startsWith("http") ? (
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    {item.label}
-                  </a>
-                ) : (
-                  <NavLink
-                    to={item.link}
-                    className={({ isActive }) =>
-                      `inline-block ${
-                        isActive
-                          ? "underline decoration-orange-500 underline-offset-7"
-                          : ""
-                      }`
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                )}
+                <NavLink
+                  to={item.link}
+                  className={({ isActive }) =>
+                    `inline-block ${
+                      isActive
+                        ? "underline decoration-orange-500 underline-offset-7"
+                        : ""
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
               </li>
             ))}
+
+            <a
+              href="https://speedtest.detik.net.id/"
+              target="blank"
+              className={`inline-block cursor-pointer xl:text-lg rounded-xs hover:text-orange-500 focus:text-slate-300 shadow-sm shadow-slate-500 hover:shadow-slate-300 px-2`}
+            >
+              Speed Test
+            </a>
           </ul>
         </div>
 
@@ -101,37 +97,34 @@ export default function Navbar() {
                 key={item.id}
                 className={`${
                   item.different
-                    ? "font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-blue-500 to-orange-500 bg-[length:200%_auto] animate-[shine_4s_linear_infinite]"
+                    ? "font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-blue-500 to-orange-500 hover:via-slate-300 hover:to-gray-400 bg-[length:200%_auto] animate-[shine_4s_linear_infinite]"
                     : "hover:text-slate-400 focus:text-slate-300"
                 }`}
               >
-                {item.external || item.link.startsWith("http") ? (
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    onClick={() => setIsOpen(false)}
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    {item.label}
-                  </a>
-                ) : (
-                  <NavLink
-                    to={item.link}
-                    onClick={() => setIsOpen(false)}
-                    className={({ isActive }) =>
-                      `inline-block ${
-                        isActive
-                          ? "underline decoration-orange-500 underline-offset-7"
-                          : ""
-                      }`
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                )}
+                <NavLink
+                  to={item.link}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `inline-block ${
+                      isActive
+                        ? "underline decoration-orange-500 underline-offset-7"
+                        : ""
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
               </li>
             ))}
+
+            <a
+              href="https://speedtest.detik.net.id/"
+              target="blank"
+              onClick={() => setIsOpen(false)}
+              className={`inline-block cursor-pointer w-30 md:w-36 lg:w-40 m-auto rounded-xs hover:text-orange-500 focus:text-slate-300 shadow-sm shadow-slate-500 hover:shadow-slate-300 px-2`}
+            >
+              Speed Test
+            </a>
           </ul>
         </div>
       </div>

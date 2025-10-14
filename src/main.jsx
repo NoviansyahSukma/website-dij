@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import Product from "./pages/Product";
 import Client from "./pages/Client";
 import Contact from "./pages/Contact";
+import Subscribe from "./pages/Subscribe";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="product" element={<Product />} />
           <Route path="client" element={<Client />} />
+          <Route path="subscribe" element={<Subscribe />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
